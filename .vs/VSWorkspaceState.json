@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\admin",
+    "\\src\\app\\classes",
+    "\\src\\app\\incident",
+    "\\src\\app\\kirmt",
+    "\\src\\app\\login",
+    "\\src\\assets",
+    "\\src\\assets\\images"
+  ],
+  "SelectedNode": "\\src\\app\\kirmt\\kirmt.component.html",
+  "PreviewInSolutionExplorer": false
+}

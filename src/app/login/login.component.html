@@ -1,0 +1,20 @@
+<div class="navbar">
+  <a style="font-size:25px" >KIRMT</a>
+</div>
+<div id="loginpage">
+  <form (ngSubmit)="loginUser()" id="loginform">
+    <label for="email">Email:</label> <br>
+    <input type="email" name="username" id="email" [(ngModel)]="user.email" placeholder="Email..."><br>
+    <label for="password">Password:</label> <br>
+    <input type="password" name="password" id="password" [(ngModel)]="user.password" placeholder="Password..."><br>
+    <br />
+    <button type="submit" id="loginbt" (click)="loginUser()">Anmelden</button>
+    <button type="button" id="loginconfirm" (click)="confirmLogin()">Confirm Login</button>
+  </form>
+</div>
+
+<div>
+
+  <h1>{{bool}}</h1>
+  <p id="hilfe"></p>
+</div>

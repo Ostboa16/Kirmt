@@ -1,0 +1,170 @@
+<div class="navbar">
+  <a style="font-size:25px" (click)="eg()">KIRMT</a>
+  <a style="margin-top:6px">Geräte-Management</a>
+  <a style="margin-top:6px" (click)="incident()">Probleme</a>
+  <a style="margin-top:2px; float:right; font-size:20px" (click)="onSwitch()">Log Out</a>
+</div>
+
+<div class="raumplan" id="raumplan">
+  <button id="og" (click)="og()">OG</button>
+  <button id="eg" (click)="eg()">EG</button>
+  <p id="auswahl">Bitte wählen Sie einen Raum aus:</p>
+  <div class="mapClass">
+    <div id="mapEG">
+      <map name="map_eg">
+        <area name="1.13.4" coords="10,417,38,449" shape="rect">
+        <area name="1.13.3" coords="38,417,68,448" shape="rect">
+        <area name="2.4.2" coords="88,420,69,448" shape="rect">
+        <area name="2.4.1" coords="106,448,88,421" shape="rect">
+        <area name="9.2.8" coords="65,382,75,402" shape="rect">
+        <area name="9.3.2" coords="58,393,64,401" shape="rect">
+        <area name="9.2.9" coords="50,382,64,382,64,392,57,392,57,402,49,401" shape="poly">
+        <area name="1.1.11" coords="50,325,88,382" shape="rect">
+        <area name="1.2.3" coords="49,281,88,326" shape="rect">
+        <area name="1.1.10" coords="106,269,145,324" shape="rect">
+        <area name="1.1.9" coords="145,385,106,325" shape="rect">
+        <area name="1.13.2" coords="171,361,194,403" shape="rect">
+        <area name="1.12.2" coords="218,403,195,362" shape="rect">
+        <area name="9.3.1" coords="252,392,259,403" shape="rect">
+        <area name="9.2.7" coords="244,383,258,382,258,392,251,391,251,403,244,404" shape="poly">
+        <area name="9.2.6" coords="260,382,271,404" shape="rect">
+        <area name="1.1.8" coords="243,327,283,383" shape="rect">
+        <area name="1.1.7" coords="244,268,281,326" shape="rect">
+        <area name="1.2.2" coords="301,226,338,273" shape="rect">
+        <area name="1.1.6" coords="301,274,339,328" shape="rect">
+        <area name="1.1.5" coords="300,327,338,385" shape="rect">
+        <area name="1.13.1" coords="366,361,388,402" shape="rect">
+        <area name="1.12.1" coords="412,402,388,362" shape="rect">
+        <area name="2.6" coords="125,420,179,458" shape="rect">
+        <area name="2.5" coords="204,457,180,419" shape="rect">
+        <area name="2.1" coords="243,420,205,458" shape="rect">
+        <area name="2.2" coords="244,419,300,458" shape="rect">
+        <area name="7.8" coords="378,457,318,416" shape="rect">
+        <area name="9.1.1" coords="379,416,436,458" shape="rect">
+        <area name="9.12" coords="437,431,461,458" shape="rect">
+        <area name="9.2.3" coords="453,381,465,403" shape="rect">
+        <area name="9.2.4" coords="446,393,452,403" shape="rect">
+        <area name="9.2.5" coords="438,382,452,382,452,391,445,391,446,402,437,402" shape="poly">
+        <area name="1.1.3" coords="438,326,477,382" shape="rect">
+        <area name="1.1.4" coords="437,271,476,326" shape="rect">
+        <area name="1.2.1" coords="438,226,476,272" shape="rect">
+        <area name="1.1.2" coords="495,215,533,271" shape="rect">
+        <area name="1.1.1" coords="494,326,534,271" shape="rect">
+        <area name="7.6" coords="495,382,534,326" shape="rect">
+        <area name="7.2" coords="559,375,581,391" shape="rect">
+        <area name="7.4.1" coords="560,360,602,362,603,390,582,389,581,374,559,375" shape="poly">
+        <area name="1.10" coords="629,238,670,369" shape="rect">
+        <area name="1.11" coords="627,218,671,237" shape="rect">
+        <area name="8.3" coords="688,253,727,288" shape="rect">
+        <area name="8.4" coords="688,325,729,288" shape="rect">
+        <area name="9.2.2" coords="698,389,688,390,689,362,708,362,708,375,698,374" shape="poly">
+        <area name="9.2.1" coords="698,374,709,390" shape="rect">
+        <area name="7.3.2" coords="708,361,730,389" shape="rect">
+        <area name="7.3.1" coords="752,390,730,362" shape="rect">
+        <area name="4.4.2" coords="751,367,772,401" shape="rect">
+        <area name="4.5" coords="773,402,800,368" shape="rect">
+        <area name="4.4.1" coords="818,402,801,368" shape="rect">
+        <area name="4.2" coords="820,402,841,368" shape="rect">
+        <area name="4.1" coords="886,366,886,373,857,401,842,399,843,368" shape="poly">
+        <area name="4.8" coords="634,170,665,190" shape="rect">
+        <area name="4.9" coords="635,184,628,184,629,203,666,203,666,190,634,191" shape="poly">
+        <area name="5.5.2" coords="665,171,682,203" shape="rect">
+        <area name="5.5.1" coords="715,203,699,170" shape="rect">
+        <area name="5.7.3" coords="728,205,715,169" shape="rect">
+        <area name="5.7.2" coords="728,171,739,203" shape="rect">
+        <area name="5.7.1" coords="752,203,741,171" shape="rect">
+        <area name="5.3.2" coords="751,203,788,171" shape="rect">
+        <area name="9.2.19" coords="787,169,809,203" shape="rect">
+        <area name="9.2.20" coords="809,202,827,170" shape="rect">
+        <area name="5.3.1" coords="827,203,862,170" shape="rect">
+        <area name="4.3" coords="791,419,811,449" shape="rect">
+        <area name="4.6" coords="777,448,791,419" shape="rect">
+        <area name="4.7" coords="761,418,777,450" shape="rect">
+        <area name="4.10" coords="743,448,761,419" shape="rect">
+        <area name="4.14" coords="729,449,743,417" shape="rect">
+        <area name="4.13" coords="692,458,709,418" shape="rect">
+        <area name="4.12" coords="692,456,676,418" shape="rect">
+        <area name="4.11" coords="585,457,583,441,607,419,677,418,676,456" shape="poly">
+        <area name="3.15.3" coords="462,539,451,528,478,500,490,510" shape="poly">
+        <area name="3.15" coords="489,566,519,539,490,511,462,539" shape="poly">
+        <area name="3.11" coords="517,539,530,552,504,577,491,568" shape="poly">
+        <area name="3.10" coords="504,579,516,592,544,564,531,552" shape="poly">
+        <area name="3.6" coords="544,619,515,591,544,566,570,591" shape="poly">
+        <area name="3.8" coords="544,619,569,591,608,628,581,655" shape="poly">
+        <area name="3.4" coords="543,644,515,671,539,696,567,669" shape="poly">
+        <area name="3.19" coords="515,671,496,652,523,625,542,643" shape="poly">
+        <area name="3.12.1" coords="475,632,502,604,523,626,495,653" shape="poly">
+        <area name="3.9.1" coords="451,606,475,633,502,606,477,580" shape="poly">
+        <area name="3.9.2" coords="452,554,478,580,450,606,424,580" shape="poly">
+        <area name="3.16.1" coords="400,537,399,513,438,514,416,537" shape="poly">
+        <area name="9.2.15" coords="381,537,400,514" shape="rect">
+        <area name="9.2.16" coords="360,513,381,537" shape="rect">
+        <area name="3.16.3" coords="322,512,360,537" shape="rect">
+        <area name="9.2.25" coords="303,537,321,514" shape="rect">
+        <area name="9.3.3" coords="286,537,303,514" shape="rect">
+        <area name="3.16.6" coords="245,536,285,514" shape="rect">
+        <area name="3.1.2" coords="224,600,273,556" shape="rect">
+        <area name="3.1.1" coords="225,599,273,646" shape="rect">
+        <area name="3.18.2" coords="225,645,273,697" shape="rect">
+        <area name="3.18.1" coords="225,697,273,719" shape="rect">
+        <area name="3.20.2" coords="273,738,225,718" shape="rect">
+        <area name="3.20.1" coords="225,771,275,739" shape="rect">
+        <area name="3.2.1" coords="292,771,339,730" shape="rect">
+        <area name="3.12" coords="293,728,337,699" shape="rect">
+        <area name="3.2.2" coords="292,698,338,646" shape="rect">
+        <area name="3.17" coords="291,610,337,646" shape="rect">
+        <area name="3.13" coords="324,592,291,592,292,574,306,560,325,562" shape="poly">
+        <area name="3.14" coords="326,592,360,593,396,554,339,554,326,561" shape="poly">
+      </map>
+      <img id="planEG" src="/assets/images/EG.png" usemap="#map_eg">
+    </div>
+    <div id="mapOG">
+      <map name="map_og">
+        <area name="1.13.7" coords="25,61,54,93" shape="rect">
+        <area name="1.13.6" coords="54,62,83,94" shape="rect">
+        <area name="1.12.3" coords="83,71,121,94" shape="rect">
+        <area name="1.1.18" coords="65,12,120,45" shape="rect">
+        <area name="1.8.2" coords="140,65,195,102" shape="rect">
+        <area name="1.8.1" coords="194,65,258,103" shape="rect">
+        <area name="1.9" coords="258,64,282,101" shape="rect">
+        <area name="1.2.6" coords="154,45,194,11" shape="rect">
+        <area name="1.1.17" coords="195,11,257,45" shape="rect">
+        <area name="1.1.16" coords="257,10,308,46" shape="rect">
+        <area name="1.12.1" coords="334,102,391,62" shape="rect">
+        <area name="9.1.3" coords="392,61,452,103" shape="rect">
+        <area name="1.13.5" coords="453,101,478,77" shape="rect">
+        <area name="1.2.5" coords="344,12,396,45" shape="rect">
+        <area name="1.1.15" coords="396,46,453,12" shape="rect">
+        <area name="1.1.14" coords="453,45,505,12" shape="rect">
+        <area name="1.2.4" coords="547,45,590,13" shape="rect">
+        <area name="1.1.13" coords="591,46,646,11" shape="rect">
+        <area name="1.1.12" coords="646,45,708,12" shape="rect">
+        <area name="1.13.8" coords="709,45,723,12" shape="rect">
+        <area name="1.5" coords="723,47,766,12" shape="rect">
+        <area name="1.7" coords="767,47,797,12" shape="rect">
+        <area name="1.6" coords="797,45,814,11" shape="rect">
+        <area name="1.3" coords="827,63,767,94" shape="rect">
+        <area name="1.4" coords="744,93,768,63" shape="rect">
+        <area name="9.2.10" coords="706,101,723,63" shape="rect">
+        <area name="9.2.12" coords="708,101,691,62" shape="rect">
+        <area name="7.1" coords="598,102,599,87,620,62,693,62,691,102" shape="poly">
+      </map>
+      <img id="planOG" src="/assets/images/OG.png" usemap="#map_og">
+    </div>
+  </div>
+  <form id="formular">
+    <label>Bitte ein Gerät auswählen:</label> <br>
+    <select id="geraete" name="geraete">
+      <option value="beamer">Beamer</option>
+      <option value="drucker">Drucker</option>
+      <option value="pc">PC</option>
+      <option value="monitor">Monitor</option>
+    </select>
+    <br><br>
+    <label>Problem:</label> <br>
+    <input type="text" name="problem" id="problem" placeholder="Wie lautet Ihr Problem?"><br>
+    <label>Beschreibung:</label> <br>
+    <textarea id="beschreibung" name="beschreibung" placeholder="Bitte beschreiben Sie Ihr Problem genauer"></textarea><br>
+    <button type="button" id="formbt">Problem Melden!</button>
+  </form>
+</div>
